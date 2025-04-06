@@ -1,0 +1,113 @@
+/* Main container */
+.receptionist-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/images/gym_home.jpg") no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Glass effect box */
+  .glass-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Heading */
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* Grid layout for buttons */
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  /* Buttons with futuristic glow effect */
+  button {
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(0, 0, 0, 0.6));
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1), inset 0px 0px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Glow animation on hover */
+  button:hover {
+    background: linear-gradient(135deg, #ff0080, #ff8c00);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 0, 128, 0.8), 0px 0px 30px rgba(255, 140, 0, 0.8);
+  }
+  
+  /* Click effect */
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px rgba(255, 0, 128, 0.5), 0px 0px 20px rgba(255, 140, 0, 0.5);
+  }
+  
+  /* Floating bubbles for futuristic look */
+  .receptionist-container::before,
+  .receptionist-container::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 0, 128, 0.3);
+    border-radius: 50%;
+    top: 20%;
+    left: 10%;
+    filter: blur(100px);
+    animation: float 6s infinite alternate;
+  }
+  
+  .receptionist-container::after {
+    background: rgba(255, 140, 0, 0.3);
+    top: 70%;
+    left: 80%;
+    animation: float 8s infinite alternate;
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

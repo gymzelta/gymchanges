@@ -1,0 +1,50 @@
+.all-members-container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2{
+    color: black;
+  }
+  .search-bar {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .members-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .members-table th, .members-table td {
+    border: 1px solid #080000;
+    background-color: rgb(229, 225, 218);
+    color: #080000;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .members-table th {
+    background-color: #4CAF50;
+    color: rgb(21, 2, 2);
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #cc0000;
+  }
+  

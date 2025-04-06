@@ -1,0 +1,81 @@
+/* Main container */
+.attendance-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e1e2f, #24243e);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+}
+
+/* Title */
+.attendance-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Table styling */
+.attendance-table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Table header */
+.attendance-table thead {
+    background: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+}
+
+.attendance-table th {
+    padding: 15px;
+    text-align: left;
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+/* Table rows */
+.attendance-table tbody tr {
+    transition: background 0.3s ease-in-out;
+}
+
+.attendance-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Table data */
+.attendance-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Hover effect */
+.attendance-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .attendance-table {
+        width: 100%;
+    }
+    
+    .attendance-title {
+        font-size: 24px;
+    }
+}

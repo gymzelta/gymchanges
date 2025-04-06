@@ -1,0 +1,84 @@
+/* 🌟 Premium Dark + Gold Theme for Gym Management */
+.add-member-container {
+    background: #121212;
+    color: #f5c518;
+    padding: 30px;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+  
+.add-member-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+  
+.status-message {
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    color: #ff4c4c;
+}
+  
+.gym-id {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #00ffcc;
+    border-bottom: 2px solid #00ffcc;
+    margin-bottom: 15px;
+}
+  
+input, select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background: #1e1e1e;
+    color: #fff;
+    outline: none;
+}
+  
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+  
+select {
+    cursor: pointer;
+}
+  
+.submit-btn {
+    background: linear-gradient(90deg, #ff9900, #ff5c00);
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.submit-btn:hover {
+    background: linear-gradient(90deg, #ff5c00, #ff9900);
+    transform: scale(1.05);
+}
+  
+.submit-btn:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+  
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .add-member-container {
+      width: 90%;
+    }
+}

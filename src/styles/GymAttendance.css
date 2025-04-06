@@ -1,0 +1,120 @@
+/* Apply a stylish background */
+body {
+    background: url('../assets/images/gym_home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.attendance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card Styles */
+.attendance-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+/* Titles */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input-form {
+    margin-top: 20px;
+}
+
+.input-field {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+/* Buttons */
+.checkin-btn, .checkout-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.checkin-btn:hover, .checkout-btn:hover {
+    background: #ffaa00;
+}
+
+/* Table Styles */
+.table-container {
+    margin-top: 30px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.custom-table {
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-table th, .custom-table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.custom-table th {
+    background: #ffaa00;
+    color: black;
+    font-size: 18px;
+}
+
+.custom-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Alert Box */
+.alert-box {
+    margin-top: 15px;
+    font-weight: bold;
+    background: rgba(255, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Member Info */
+.member-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-align: center;
+}
